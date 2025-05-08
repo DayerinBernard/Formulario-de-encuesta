@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1 id="title">Formulario</h1>
+
+  <p id="description">
+    Prueba de crear formulario
+  </p>
+
+  <form id="survey-form">
+  
+    <label for="name" id="name-label">Nombre:</label>
+    <input type="text" id="name" name="name" required placeholder="Escribe tu nombre">
+    
+
+    <label for="email" id="email-label">Correo Electrónico:</label>
+    <input type="email" id="email" name="email" required placeholder="Escribe tu correo electrónico">
+
+   
+    <label for="number" id="number-label">Número (entre 1 y 10):</label>
+    <input type="number" id="number" name="number" required min="1" max="10" placeholder="Escribe un número entre 1 y 10">
+
+ 
+    <label for="dropdown" id="dropdown-label">Selecciona una opción:</label>
+    <select id="dropdown" name="dropdown" required>
+      <option value="opcion1">Opción 1</option>
+      <option value="opcion2">Opción 2</option>
+    </select>
+
+    
+    <fieldset>
+      <legend>Selecciona tu preferencia:</legend>
+      <label>
+        <input type="radio" name="preference" value="opcionA" required> Opción A
+      </label>
+      <label>
+        <input type="radio" name="preference" value="opcionB" required> Opción B
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Selecciona tus intereses:</legend>
+      <label>
+        <input type="checkbox" name="intereses" value="deportes"> Deportes
+      </label>
+      <label>
+        <input type="checkbox" name="intereses" value="musica"> Música
+      </label>
+      <label>
+        <input type="checkbox" name="intereses" value="tecnologia"> Tecnología
+      </label>
+    </fieldset>
+
+   
+    <label for="comments" id="comments-label">Comentarios:</label>
+    <textarea id="comments" name="comments" placeholder="Escribe tus comentarios aquí..."></textarea>
+
+   
+    <button type="submit" id="submit">Enviar</button>
+  </form>
+
+</body>
+</html>
